@@ -10,6 +10,16 @@
 
 4. To connect your deployed DB to your back-end server, in the .env file add a variable `CONNECTION_STRING=` and assign it the URL value in the details of your instance in ElephantSQL. In your **dbConfig.js** file add `const connectionstring = process.env.CONNECTION_STRING` and below add `const db = pgp(connectionstring)`.
 Make sure you are importing dotenv and pgp.
+Your dbConfig.js file should look something like this:
+```js
+const pgp = require("pg-promise")();
+require("dotenv").config();
+
+const connectionstring = process.env.CONNECTION_STRING
+const db = pgp(connectionstring);
+
+module.exports = db;
+```
 
 
 **ElephantSQL will be shut down Jan 27th 2025**
