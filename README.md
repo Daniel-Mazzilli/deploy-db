@@ -2,7 +2,7 @@
 
 ### Follow the steps below to deploy your DB to ElephantSQL, and manage the deployed DB using Postico, [download Postico 2 here](https://eggerapps.at/postico2/)
 
-1. Visit [ElephantSQL](https://elephantsql.com/), click on **Get a managed database today**, choose the free plan **Tiny Turtle**, signin with GitHub, add a name to your new instance, select **US-East-1 (Northern Virginia)**, review and the select **Create Instance**
+1. Visit [ElephantSQL](https://elephantsql.com/), click on **Get a managed database today**, choose the free plan **Tiny Turtle**, signin with GitHub, add a name to your new instance, select **US-East-1 (Northern Virginia)**, review and then select **Create Instance**
 
 2. Click on your new instance to open its details. Now open Postico, select new server, copy what's in the server box in ElephantSQL minus the portion in the parenthesis (ex. raja.db.elephantsql.com) and paste it into the `Host` box in Postico, enter what is in the User & Default database value into the `Database` and `User` boxes in Postico, copy and paste the password box into the `password` box in Postico. Hit **connect**
 
